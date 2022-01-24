@@ -2,7 +2,7 @@ import Modele
 
 
 ### TP 04 #####################################################################
-#Fonctions utiles mais non obligatoires (utiles pour le BONUS)
+#Fonctions utiles mais non obligatoires
 
 # Creation de Vecteur entre 2 Points
 def Vecteur(p1, p2):
@@ -225,9 +225,7 @@ class ControleurCourbes(object):
         for tr in self.scene.listeobjets[indcptobj].listeindicestriangle :
             i += 1
             ###########################
-            #BONUS : On verifie le produit scalaire de la normale du triangle et du vecteur de la caméra (observateur),
-            #si celui est négatif : il est inutile d'utiliser le remplissage de triangle puisque se sont des faces invisibles,
-            #ceci est un gain de calcul.
+            
             
             #triVn = ProdVec(Vecteur(listesommetsdansreperecamera[tr[0] - 1], listesommetsdansreperecamera[tr[2] - 1]), \
                             #Vecteur(listesommetsdansreperecamera[tr[0] - 1], listesommetsdansreperecamera[tr[1] - 1]))
